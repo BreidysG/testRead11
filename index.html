@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 10</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El elefante encadenado
+                <br><br>
+                Cuando yo era pequeño me encantaban los circos, y lo que más me gustaba de los circos eran los animales. Me llamaba especialmente la atención el elefante que, como más tarde supe, era también el animal preferido por otros niños. Durante la función, la enorme bestia hacía gala de un peso, un tamaño y una fuerza descomunales... Pero después de su actuación y hasta poco antes de volver al escenario, el elefante siempre permanecía atado a una pequeña estaca clavada en el suelo con una cadena que aprisionaba una de sus patas.
+                <br><br>
+                Sin embargo, la estaca era sólo un minúsculo pedazo de madera apenas enterrado unos centímetros en el suelo. Y, aunque la cadena era gruesa y poderosa, me parecía obvio que un animal capaz de arrancar un árbol de cuajo con su fuerza, podría liberarse con facilidad de la estaca y huir. El misterio sigue pareciéndome evidente. ¿Qué lo sujeta entonces? ¿Por qué no huye? Cuando tenía cinco o seis años, yo todavía confiaba en la sabiduría de los mayores. Pregunté entonces a un maestro, un padre o un tío por el misterio del elefante. Alguno de ellos me explicó que el elefante no se escapaba porque estaba amaestrado. Hice entonces la pregunta obvia: "Si está amaestrado, ¿por qué lo encadenan?". No recuerdo haber recibido ninguna respuesta coherente. Con el tiempo, olvidé el misterio del elefante y la estaca, y sólo lo recordaba cuando me encontraba con otros que también se habían hecho esa pregunta alguna vez.
+                <br><br>
+                Hace algunos años, descubrí que, por suerte para mí, alguien había sido lo suficientemente sabio como para encontrar la respuesta: El elefante del circo no escapa porque ha estado atado a una estaca parecida desde que era muy, muy pequeño. Cerré los ojos e imaginé al indefenso elefante recién nacido sujeto a la estaca. Estoy seguro de que, en aquel momento, el elefantito empujó, tiró y sudó tratando de soltarse. Y, a pesar de sus esfuerzos, no lo consiguió, porque aquella estaca era demasiado dura para él. Imaginé que se dormía agotado y que al día siguiente lo volvía a intentar, y al otro día, y al otro... Hasta que, un día, un día terrible para su historia, el animal aceptó su impotencia y se resignó a su destino.
+                <br><br>
+                Ese elefante enorme y poderoso que vemos en el circo no escapa porque, pobre, cree que no puede. Tiene grabado el recuerdo de la impotencia que sintió poco después de nacer. Y lo peor es que jamás se ha vuelto a cuestionar seriamente ese recuerdo. Jamás, jamás intentó volver a poner a prueba su fuerza...
+                <br><br>
+                Todos somos un poco como el elefante del circo: vamos por el mundo atados a cientos de estacas que nos restan libertad. Vivimos pensando que "no podemos" hacer montones de cosas, simplemente porque una vez, hace tiempo, cuando éramos pequeños, lo intentamos y no lo conseguimos. Hicimos entonces lo mismo que el elefante, y grabamos en nuestra memoria este mensaje: No puedo, no puedo y nunca podré.
+                <br><br>
+                Hemos crecido llevando ese mensaje que nos impusimos a nosotros mismos y por eso nunca más volvimos a intentar liberarnos de la estaca. Cuando, a veces, sentimos los grilletes y hacemos sonar las cadenas, miramos de reojo la estaca y pensamos: No puedo y nunca podré.
+                <br><br>
+                Jorge Bucay, Editorial Océano, 2015 - 548 palabras.
+            </p>            
+                   
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
